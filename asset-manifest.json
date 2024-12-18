@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/AW-Web/static/css/main.a10c1560.css",
+    "main.js": "/AW-Web/static/js/main.d12ea114.js",
+    "static/media/Stabble.jpg": "/AW-Web/static/media/Stabble.841468eea881b1fd4281.jpg",
+    "static/media/Free.jpg": "/AW-Web/static/media/Free.4c2769d34998fb1e81f1.jpg",
+    "static/media/Planned.jpg": "/AW-Web/static/media/Planned.e675cc49e867744e6cc4.jpg",
+    "static/media/Farmer.jpg": "/AW-Web/static/media/Farmer.b52515027940d07e3837.jpg",
+    "static/media/GrowingPlant.jpg": "/AW-Web/static/media/GrowingPlant.724e0e81bda0f8f534a7.jpg",
+    "static/media/paddy.png": "/AW-Web/static/media/paddy.efb7604e76f989831932.png",
+    "static/media/HandPlant.png": "/AW-Web/static/media/HandPlant.f5231f485824e778b31c.png",
+    "static/media/EcoSystem.png": "/AW-Web/static/media/EcoSystem.0f1606368f6f1529ad38.png",
+    "static/media/FarmerP.png": "/AW-Web/static/media/FarmerP.ffe4388e6e09f767f3f9.png",
+    "static/media/About Glob.png": "/AW-Web/static/media/About Glob.fb9604ebf964f28fc4db.png",
+    "static/media/Center.png": "/AW-Web/static/media/Center.dcecb3de57f484b65189.png",
+    "static/media/Oppo Back.png": "/AW-Web/static/media/Oppo Back.6cb852770c911fc760a0.png",
+    "static/media/MPLady.png": "/AW-Web/static/media/MPLady.053de18920fb9776454a.png",
+    "static/media/APP_PC.png": "/AW-Web/static/media/APP_PC.ce4e9f377e5a64b3fe0c.png",
+    "static/media/MPTab.png": "/AW-Web/static/media/MPTab.46f054abfe2469c3b583.png",
+    "static/media/Solution Components.png": "/AW-Web/static/media/Solution Components.7bfc957c8f2ce75458b8.png",
+    "static/media/investor.png": "/AW-Web/static/media/investor.1685e9210ae86377c776.png",
+    "static/media/AgroWorld logo.png": "/AW-Web/static/media/AgroWorld logo.5e7fe916c3fd10b8c8cb.png",
+    "static/media/Saman.png": "/AW-Web/static/media/Saman.c7b7e1641fe62bee130e.png",
+    "static/media/MP.png": "/AW-Web/static/media/MP.49b7b310836be95cdf2c.png",
+    "static/media/Jee.png": "/AW-Web/static/media/Jee.0b08a23edd5e67b2a598.png",
+    "static/media/Ano.png": "/AW-Web/static/media/Ano.c690f251d44c26ac4b59.png",
+    "static/media/Lak.png": "/AW-Web/static/media/Lak.fedb6e786eaeba994fa8.png",
+    "static/media/BlueCart.png": "/AW-Web/static/media/BlueCart.deb2d35b975657ee1a8d.png",
+    "static/media/PC.png": "/AW-Web/static/media/PC.b46724eede5532a5f482.png",
+    "index.html": "/AW-Web/index.html",
+    "main.a10c1560.css.map": "/AW-Web/static/css/main.a10c1560.css.map",
+    "main.d12ea114.js.map": "/AW-Web/static/js/main.d12ea114.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a10c1560.css",
+    "static/js/main.d12ea114.js"
+  ]
+}
