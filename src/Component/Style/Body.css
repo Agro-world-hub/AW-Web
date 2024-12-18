@@ -1,0 +1,351 @@
+/* General Reset and Container Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*################################# GreenStart Section ######################################*/
+/* Container */
+.GreenStart {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+    color: white;
+    padding: 20px;
+    align-items: center; /* Vertically center content */
+}
+
+/* Left Section with Image and Overlay Text */
+.GreenStart-Left {
+    position: relative;
+    background-color: #06402B; /* Fallback background color */
+    overflow: hidden;
+}
+
+.GreenStart-Left img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove unwanted spaces */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: clamp(16px, 1.8vw, 20px); /* Responsive font size */
+    font-weight: bold;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7); /* Better text contrast */
+    z-index: 2; /* Ensures visibility above the image */
+}
+
+.text-overlay h2 {
+    margin-bottom: 10px;
+    font-size: clamp(18px, 2.5vw, 28px); /* Responsive heading size */
+}
+
+.text-overlay p {
+    font-size: clamp(12px, 1.2vw, 16px);
+    line-height: 1.4;
+}
+
+/* Right Section with Image */
+.GreenStart-Right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.GreenStart-Right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures proper scaling */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .GreenStart {
+        grid-template-columns: 1fr; /* Stack sections vertically */
+        gap: 10px;
+    }
+
+    .text-overlay {
+        top: 30%; /* Adjust position for smaller screens */
+    }
+
+    .GreenStart-Right img {
+        max-height: 300px; /* Limit image height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay h2 {
+        font-size: 20px; /* Smaller font for mobile devices */
+    }
+
+    .text-overlay p {
+        font-size: 14px;
+    }
+}
+
+
+/*################################# About Section ######################################*/
+.About {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.About-left img {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.topic {
+    background-color: #b0da61;
+    color: rgb(76, 95, 9);
+    border: 2px solid rgb(187, 206, 83);
+    border-radius: 10px;
+    padding: 8px 15px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .About {
+        grid-template-columns: 1fr 1fr; /* Side-by-side on larger screens */
+    }
+}
+
+/*################################# EcoSystem Section ######################################*/
+.EcoSystem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.EcoSystem img {
+    max-width: 600px;
+    height: auto;
+}
+
+/*################################# Target Sections ######################################*/
+.target-section h2{
+    margin-left: 475px;
+}
+.SolutionComponents .header-section h2{
+    margin-left: 220px; /* Remove default margin */
+    font-size: 2rem; /* Adjust font size if needed */
+    color: #333; /* Optional: Set text color */
+}
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px); /* 4 cards in a row */
+    max-width: 300px; /* Prevent stretching */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* 1 card per row */
+    }
+}
+
+/*################################# Stakeholder Benefits Section ######################################*/
+.Stakeholder {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.column {
+    flex: 1 1 300px;
+    text-align: center;
+    padding: 15px;
+}
+
+.text-item {
+    background-color: #f0fdf4;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.text-item:hover {
+    background-color: #e8f5e9;
+    transform: translateY(-5px);
+}
+
+/*################################# Responsive Enhancements ######################################*/
+@media (max-width: 768px) {
+    .GreenStart,
+    .About,
+    .Stakeholder {
+        padding: 20px;
+    }
+
+    .column-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-item {
+        width: 90%;
+        margin: 5px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Container with background image */
+.paddy {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  .paddy img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  /* Overlay for text and button */
+  .paddy-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+  
+  .paddy-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  
+  .paddy-button {
+    background-color: #2c2d2c; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .paddy-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .paddy-overlay h1 {
+      font-size: 1.8rem; /* Smaller font size for smaller screens */
+    }
+  
+    .paddy-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+  }
+  
+  /* Section 1: Intro Section */
+  .plantcare-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+    background-color: #ffffff;
+  }
+  
+  .intro-left {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .plantcare-title {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .plantcare-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .plantcare-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .intro-right {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .app-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* Section 2: Benefits Section */
+  .plantcare-benefits {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .benefits-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .farmer-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+  
+  .benefits-right {
+    flex: 2;
+  }
+  
+  .benefits-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .benefits-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .benefit-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .benefit-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .benefit-content p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .plantcare-intro,
+    .plantcare-benefits {
+      flex-direction: column;
+    }
+  
+    .intro-left,
+    .intro-right,
+    .benefits-left,
+    .benefits-right {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .benefit-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .benefit-icon {
+      margin-bottom: 10px;
+    }
+  }

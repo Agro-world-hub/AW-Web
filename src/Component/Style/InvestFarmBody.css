@@ -1,0 +1,303 @@
+/*1st Section styles... -Raw_One*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+  
+  /* Container Row */
+  .Row-One {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  /* Left Section */
+  .left {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .investment-title {
+    color: #007bff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .investment-subtitle {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .investment-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .sign-up-button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .sign-up-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Right Section */
+  .right {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .investment-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Prevents distortion */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .Row-One {
+      flex-direction: column;
+      padding: 10px;
+      height: auto;
+    }
+  
+    .left,
+    .right {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .investment-title {
+      font-size: 2rem;
+    }
+  
+    .investment-subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .investment-description {
+      font-size: 1rem;
+    }
+  
+    .sign-up-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .investment-title {
+      font-size: 1.8rem;
+    }
+  
+    .investment-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .investment-description {
+      font-size: 0.9rem;
+    }
+  
+    .sign-up-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .investment-title {
+      font-size: 1.5rem;
+    }
+  
+    .investment-subtitle {
+      font-size: 1rem;
+    }
+  
+    .investment-description {
+      font-size: 0.9rem;
+    }
+  
+    .sign-up-button {
+      font-size: 0.8rem;
+      padding: 8px 14px;
+    }
+  }
+  
+  /*2nd Section styles... -Raw_Two*/
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Raw-Two Container */
+  .Raw-Two {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Align items to left and right */
+    align-items: center; /* Vertically center the items */
+    width: 100%; /* Full browser width */
+    padding: 40px 20px; /* Padding for top, bottom, and sides */
+    gap: 20px; /* Gap between left and right sections */
+    background-color: #f9f9f9; /* Optional: Light background */
+  }
+  
+  /* Left Section - Image */
+  .two-left {
+    flex: 1; /* Takes 1 portion of the space */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+  }
+  
+  .investor-image {
+    width: 100%;
+    max-width: 400px; /* Adjust max width for the image */
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Right Section - Benefits Cards */
+  .two-right {
+    flex: 2; /* Takes 2 portions of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: flex-start; /* Align content to the left */
+  }
+  
+  .benefits-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Cards Container */
+  .benefits-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .benefit-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .benefit-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .benefit-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-content p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .Raw-Two {
+      flex-direction: column; /* Stack left and right sections vertically */
+      gap: 30px; /* Increase gap for better spacing */
+    }
+  
+    .two-left,
+    .two-right {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    .benefit-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .benefit-icon {
+      margin: 0 auto 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .benefits-title {
+      font-size: 1.8rem;
+    }
+  
+    .benefit-content h3 {
+      font-size: 1rem;
+    }
+  
+    .benefit-content p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .benefits-title {
+      font-size: 1.5rem;
+    }
+  
+    .benefit-icon {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .investor-image {
+      max-width: 250px;
+    }
+  }
+  
+  
